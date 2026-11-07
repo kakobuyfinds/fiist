@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#243c72">
+  <title>OOTDBuy spreadsheet : guide français, tailles et photos QC</title>
+  <meta name="description" content="Comprendre un OOTDBuy spreadsheet, comparer les tailles, lire les photos QC et préparer son budget. Guide indépendant et catégories sur Hipobuyfind.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="OOTDBuy spreadsheet — Le carnet des choix réfléchis">
+  <meta property="og:description" content="Un guide français pour examiner les références, comparer les mesures et comprendre les photos QC avant de choisir.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OOTDBuy spreadsheet : le guide français">
+  <meta name="twitter:description" content="Catégories, conseils de sélection et réponses pratiques pour comparer les articles avec méthode.">
+
+  <!--
+    Fichier : index.html.
+    Recherche : OOTDBuy spreadsheet, sélection aléatoire dans la liste fournie.
+    Dix résultats consultés via le moteur de recherche disponible :
+    repsheet.net/spreadsheet/ootdbuy
+    ootdbuyspreadsheet.org
+    repgalaxy.tips/ootdbuy-spreadsheet
+    ootdbuy.org
+    ootdbuylinks.com
+    ootdbuyspreadsheetx.com
+    ootdbuy.app
+    ootdbuyspreadsheet.net
+    ootdbuy.net/faq.html
+    ootdbuyfind.com
+    L'accès direct à Google n'a pas abouti : leur classement sur sa première page
+    n'est donc pas confirmé. Aucune promesse commerciale issue de ces pages
+    n'est reprise ici. Les textes sont originaux.
+    Mot-clé principal : OOTDBuy spreadsheet.
+    Axes secondaires : guide OOTDBuy en français ; sélection de vêtements OOTDBuy ;
+    photos QC OOTDBuy ; guide des tailles OOTDBuy.
+    Aucune URL canonique fictive : renseigner l'adresse réelle après déploiement.
+  -->
+
+  <link rel="preconnect" href="static.nike.com">
+  <link rel="preconnect" href="assets.christiandior.com">
+
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f5ef;
+      --white: #fff;
+      --ink: #182333;
+      --muted: #536074;
+      --blue: #243c72;
+      --lime: #e2ef9c;
+      --line: #d9dcd8;
+      --soft: #ecefe8;
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-text-size-adjust: 100%;
+    }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid #a04d00;
+      outline-offset: 5px;
+    }
+    img { display: block; width: 100%; height: auto; }
+    h1, h2, h3, p, figure { margin: 0; }
+    h1, h2, h3 { line-height: 1.12; text-wrap: balance; }
+    h1 { font-size: clamp(2.5rem, 5.8vw, 5.5rem); letter-spacing: -.055em; }
+    h2 { font-size: clamp(1.8rem, 3.6vw, 3rem); letter-spacing: -.04em; }
+    h3 { font-size: 1.3rem; letter-spacing: -.025em; }
+    p + p { margin-top: 1rem; }
+    .wrap { width: min(1200px, calc(100% - 40px)); margin-inline: auto; }
+    .eyebrow {
+      display: block;
+      font-size: .72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      margin-bottom: 18px;
+    }
+    .masthead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-block: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .logo {
+      text-decoration: none;
+      font-size: clamp(1.05rem, 2.4vw, 1.4rem);
+      font-weight: 850;
+      letter-spacing: -.05em;
+    }
+    .masthead-note { font-size: .79rem; color: var(--muted); text-align: right; }
+    .categories { padding: 25px 0 30px; }
+    .category-label { margin-bottom: 12px; font-size: .8rem; color: var(--muted); }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .category-grid a {
+      min-height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2px;
+      padding: 12px 14px;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--white);
+    }
+    .category-grid a:hover { border-color: var(--blue); background: #edf0f8; }
+    .category-grid strong { font-size: .9rem; line-height: 1.3; }
+    .category-grid span { color: var(--muted); font-size: .69rem; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      background: var(--blue);
+      border-radius: var(--radius);
+      overflow: hidden;
+      color: var(--white);
+    }
+    .hero-copy { padding: clamp(25px, 4vw, 55px); }
+    .hero-copy .eyebrow { color: var(--lime); }
+    .hero-copy p { margin-top: 24px; max-width: 48ch; color: #e0e6f1; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      min-height: 48px;
+      margin-top: 26px;
+      padding: 12px 20px;
+      border-radius: 6px;
+      background: var(--lime);
+      color: var(--ink);
+      font-size: .9rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+    .button:hover { background: #eef7bf; }
+    .hero-art {
+      background: #efefef;
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 28px;
+    }
+    .hero-art img { aspect-ratio: 1; object-fit: contain; }
+    figcaption { font-size: .75rem; line-height: 1.5; margin-top: 12px; color: var(--muted); }
+    .answer {
+      display: grid;
+      grid-template-columns: .75fr 2fr;
+      gap: 35px;
+      margin-block: 25px 65px;
+      padding: 28px;
+      background: var(--lime);
+      border-radius: 12px;
+    }
+    .answer h2 { font-size: 1.4rem; }
+    .section { margin-block: 65px; }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 28px;
+      margin-bottom: 28px;
+    }
+    .section-head p { max-width: 43ch; color: var(--muted); font-size: .92rem; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+    .step { border-top: 2px solid var(--blue); padding-top: 18px; }
+    .number { display: block; color: var(--blue); font-size: .75rem; font-weight: 800; margin-bottom: 25px; }
+    .step p { margin-top: 12px; color: var(--muted); font-size: .9rem; }
+    .editorial { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .visual-card { background: #e8e6df; border-radius: var(--radius); overflow: hidden; }
+    .visual-card img { aspect-ratio: 4 / 3; object-fit: cover; object-position: center 30%; }
+    .visual-card figcaption { padding: 18px 22px 22px; margin: 0; }
+    .visual-card strong { display: block; font-size: 1rem; color: var(--ink); margin-bottom: 6px; }
+    .note { margin-top: 20px; color: var(--muted); font-size: .8rem; }
+    .journal { display: grid; grid-template-columns: .72fr 2fr; gap: 45px; }
+    .journal-intro p { color: var(--muted); margin-top: 18px; }
+    .articles { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .article {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 25px;
+    }
+    .article .eyebrow { color: var(--blue); margin-bottom: 15px; }
+    .article p { color: var(--muted); font-size: .91rem; margin-top: 16px; }
+    .article h4 { margin: 20px 0 0; font-size: .95rem; line-height: 1.4; }
+    .table-box { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+    table { border-collapse: collapse; width: 100%; background: var(--white); font-size: .9rem; }
+    th, td { padding: 18px 22px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { background: var(--soft); font-weight: 750; }
+    tr:last-child td { border-bottom: 0; }
+    .faq-layout { display: grid; grid-template-columns: .72fr 2fr; gap: 45px; }
+    details { border-bottom: 1px solid var(--line); padding-block: 20px; }
+    details:first-child { border-top: 1px solid var(--line); }
+    summary { cursor: pointer; font-weight: 750; padding-right: 15px; line-height: 1.5; }
+    details p { margin-top: 15px; font-size: .95rem; color: var(--muted); max-width: 74ch; }
+    .closing {
+      background: var(--ink);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 38px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+    .closing h2 { font-size: 2rem; }
+    .closing p { color: #d2d9e4; margin-top: 12px; max-width: 60ch; }
+    .closing .button { flex-shrink: 0; margin-top: 0; }
+    footer { padding-block: 35px; margin-top: 30px; color: var(--muted); font-size: .78rem; }
+    footer p { max-width: 100ch; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr 1fr; }
+      .category-grid { grid-template-columns: repeat(3, 1fr); }
+      .steps { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .journal, .faq-layout { grid-template-columns: 1fr; gap: 28px; }
+      .journal-intro p { max-width: 65ch; }
+    }
+    @media (max-width: 600px) {
+      .wrap { width: calc(100% - 28px); }
+      .masthead-note { max-width: 130px; font-size: .68rem; }
+      .category-grid { grid-template-columns: 1fr 1fr; }
+      .category-grid a { padding: 10px; min-height: 65px; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-copy { padding: 30px 25px; }
+      .hero-art { padding: 18px 35px; }
+      .hero-art img { aspect-ratio: 4 / 3; }
+      .answer { grid-template-columns: 1fr; gap: 15px; padding: 23px; margin-bottom: 45px; }
+      .section { margin-block: 45px; }
+      .section-head, .closing { display: block; }
+      .section-head p { margin-top: 16px; }
+      .editorial, .articles { grid-template-columns: 1fr; }
+      .step h3 { font-size: 1.1rem; }
+      .number { margin-bottom: 15px; }
+      .closing { padding: 28px; }
+      .closing .button { margin-top: 22px; }
+      th, td { padding: 14px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "OOTDBuy spreadsheet : guide français, tailles et photos QC",
+        "description": "Un guide indépendant pour examiner les références, comparer les mesures et comprendre les photos QC avant de choisir.",
+        "inLanguage": "fr",
+        "about": {
+          "@type": "Thing",
+          "name": "OOTDBuy spreadsheet",
+          "description": "Une liste organisée de références et de liens utilisée pour repérer et comparer des articles."
+        }
+      },
+      {
+        "@type": "Article",
+        "headline": "Guide des tailles OOTDBuy : partir de ses mesures",
+        "inLanguage": "fr",
+        "articleSection": "Conseils de sélection",
+        "description": "Comparer les mesures d'un vêtement porté avec celles de la fiche et vérifier les conventions de mesure."
+      },
+      {
+        "@type": "Article",
+        "headline": "Photos QC OOTDBuy : regarder au-delà du logo",
+        "inLanguage": "fr",
+        "articleSection": "Lecture des photos",
+        "description": "Examiner les coutures, la symétrie et les détails visibles sans confondre photographie et preuve d'authenticité."
+      },
+      {
+        "@type": "Article",
+        "headline": "Sélection de vêtements OOTDBuy : construire une tenue",
+        "inLanguage": "fr",
+        "articleSection": "Idées de sélection",
+        "description": "Choisir une pièce centrale, équilibrer les volumes et comparer les matières annoncées."
+      },
+      {
+        "@type": "Article",
+        "headline": "Guide OOTDBuy en français : préparer son budget",
+        "inLanguage": "fr",
+        "articleSection": "Préparation de l'achat",
+        "description": "Distinguer le montant de l'article, le transport, les frais éventuels et les conditions de retour."
+      },
+      {
+        "@type": "FAQPage",
+        "inLanguage": "fr",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce qu'un OOTDBuy spreadsheet ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "C'est une liste organisée de références et de liens utilisée pour repérer et comparer des articles. Son nom ne garantit ni un format Excel, ni un stock disponible, ni la qualité d'un vendeur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cette page est-elle officielle ou affiliée à OOTDBuy ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Il s'agit d'un guide indépendant. Les liens de navigation conduisent à Hipobuyfind et aux catégories indiquées, pas à un compte OOTDBuy. Aucune affiliation avec les marques illustrées n'est revendiquée."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment choisir une taille sans essayer l'article ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mesurez un vêtement qui vous va, comparez les dimensions avec la fiche et vérifiez les unités ainsi que la méthode de mesure. Pour les chaussures, comparez la longueur du pied avec le tableau du modèle concerné."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Les photos QC prouvent-elles l'authenticité ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Elles peuvent aider à observer l'aspect d'un article photographié, mais ne suffisent pas à établir son authenticité, sa composition exacte ou sa durabilité."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Peut-on connaître le coût final depuis un spreadsheet ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pas avec le seul montant affiché. Il faut aussi vérifier le transport, les frais éventuels, la conversion monétaire et les taxes applicables à la destination avant de payer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Les images présentent-elles des articles disponibles sur Hipobuyfind ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Les images servent de références visuelles pour les conseils de style. Elles ne confirment ni disponibilité, ni provenance, ni correspondance avec les articles du site de destination."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/fiist/">
+</head>
+
+<body>
+  <header class="wrap masthead">
+    <a class="logo" href="https://www.hipobuyfind.com" aria-label="Ouvrir hipobuyfind.com">hipobuyfind.com<span aria-hidden="true"> ↗</span></a>
+    <p class="masthead-note">Le carnet de sélection<br>Édition française · Guide indépendant</p>
+  </header>
+
+  <main class="wrap">
+    <nav class="categories" aria-label="Catégories sur Hipobuyfind">
+      <p class="category-label">Commencer par une catégorie · Liens vers Hipobuyfind</p>
+      <ul class="category-grid">
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html"><strong>Chaussures ↗</strong><span lang="en">Shoes</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html"><strong>Sweats et pulls ↗</strong><span lang="en">Hoodies / Sweaters</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html"><strong>T-shirts ↗</strong><span>Hauts à manches courtes</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html"><strong>Vestes ↗</strong><span lang="en">Jackets</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html"><strong>Pantalons et shorts ↗</strong><span lang="en">Pants / Shorts</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html"><strong>Casquettes et bonnets ↗</strong><span lang="en">Headwear</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html"><strong>Ensembles ↗</strong><span lang="en">Sets</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html"><strong>Sous-vêtements ↗</strong><span lang="en">Underwear / Underpants</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html"><strong>Maillots ↗</strong><span lang="en">Jersey</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html"><strong>Accessoires ↗</strong><span>Les détails de la tenue</span></a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow">Repérer · Comparer · Choisir</span>
+        <h1 id="hero-title">OOTDBuy spreadsheet.<br>Le style commence par les détails.</h1>
+        <p>Une image attire le regard. Les mesures, la matière et la référence vous aident à décider. Ce carnet français propose une méthode simple pour passer d'une découverte à une sélection réfléchie.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Explorer Hipobuyfind <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="hero-art">
+        <img
+          src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png"
+          alt="Nike Air Force 1 ’07 blanche, vue de profil avec semelle blanche"
+          width="535"
+          height="669"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
+        <figcaption>Référence visuelle : Nike Air Force 1 ’07. Une silhouette à observer, sans indication de stock ni de prix.</figcaption>
+      </figure>
+    </section>
+
+    <aside class="answer" aria-labelledby="definition-title">
+      <h2 id="definition-title">Un spreadsheet, concrètement ?</h2>
+      <p>Un <strong>OOTDBuy spreadsheet</strong> est une liste organisée de références et de liens pour repérer des articles. Il facilite la comparaison, mais ne garantit ni qualité, ni authenticité, ni disponibilité. Cette page propose des conseils ; ses liens ouvrent <strong>Hipobuyfind</strong>.</p>
+    </aside>
+
+    <section class="section" aria-labelledby="method-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">La méthode en quatre gestes</span>
+          <h2 id="method-title">Donner une suite utile<br>à chaque découverte.</h2>
+        </div>
+        <p>La meilleure sélection est celle que vous pouvez expliquer : une coupe adaptée, des détails lisibles et un coût compris.</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <span class="number">01 / LA RÉFÉRENCE</span>
+          <h3>Identifier la bonne variante</h3>
+          <p>Relever le modèle, la couleur et la taille. Deux photos proches peuvent renvoyer à des versions différentes.</p>
+        </article>
+        <article class="step">
+          <span class="number">02 / LES MESURES</span>
+          <h3>Comparer avec son vestiaire</h3>
+          <p>Utiliser un vêtement qui vous va comme point de départ, puis confronter ses dimensions à celles de la fiche.</p>
+        </article>
+        <article class="step">
+          <span class="number">03 / LES IMAGES</span>
+          <h3>Observer plusieurs angles</h3>
+          <p>Chercher des vues des coutures, des fermetures et des finitions. Une image promotionnelle laisse souvent des questions ouvertes.</p>
+        </article>
+        <article class="step">
+          <span class="number">04 / LA DÉCISION</span>
+          <h3>Vérifier avant de payer</h3>
+          <p>Relire les informations actuelles du vendeur, les frais et les conditions de retour sur la destination finale.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="visual-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Le cahier visuel</span>
+          <h2 id="visual-title">Une silhouette.<br>Deux façons de la lire.</h2>
+        </div>
+        <p>Regarder d'abord les proportions, puis les finitions. Le nom d'une maison ne remplace pas l'examen de la fiche.</p>
+      </div>
+      <div class="editorial">
+        <figure class="visual-card">
+          <img
+            src="https://assets.christiandior.com/is/image/diorprod/LOOK_H_25_2_LOOK_112_E32?wid=720&amp;hei=640&amp;qlt=75&amp;fit=crop"
+            alt="Silhouette Dior masculine associant un haut clair et une étoffe sombre à motif"
+            width="720"
+            height="640"
+            loading="lazy"
+            decoding="async">
+          <figcaption><strong>01 — Lire les volumes</strong>Observer la longueur du haut, la ligne des épaules et la place de l'accessoire dans la tenue.</figcaption>
+        </figure>
+        <figure class="visual-card">
+          <img
+            src="https://assets.christiandior.com/is/image/diorprod/LOOK_H_25_2_LOOK_112_E33?wid=720&amp;hei=640&amp;qlt=75&amp;fit=crop"
+            alt="Autre vue de la silhouette Dior avec une étoffe sombre à motif Oblique"
+            width="720"
+            height="640"
+            loading="lazy"
+            decoding="async">
+          <figcaption><strong>02 — Lire les détails</strong>Comparer le tombé, la disposition du motif et les finitions visibles avant d'interpréter une matière.</figcaption>
+        </figure>
+      </div>
+      <p class="note">Visuels de référence Nike et Dior, hébergés sur leurs domaines d'images respectifs. Ils ne présentent pas un inventaire Hipobuyfind et n'impliquent aucune relation commerciale avec ces marques.</p>
+    </section>
+
+    <section class="section journal" aria-labelledby="journal-title">
+      <div class="journal-intro">
+        <span class="eyebrow">Le journal pratique</span>
+        <h2 id="journal-title">Moins d'hésitation.<br>De meilleurs repères.</h2>
+        <p>Quatre dossiers courts pour aborder les tailles, les photos, les associations et le budget sans multiplier les suppositions.</p>
+      </div>
+
+      <div class="articles">
+        <article class="article">
+          <span class="eyebrow">Dossier 01 · Les mesures</span>
+          <h3>Guide des tailles OOTDBuy : partir de ses mesures</h3>
+          <p>Pour <strong>choisir sa taille OOTDBuy</strong>, commencez par un vêtement familier posé à plat. Notez ses dimensions plutôt que de vous fier uniquement à une étiquette S, M ou L.</p>
+          <h4>Comparer un sweat et un t-shirt</h4>
+          <p>Pour <strong>mesurer un sweat à plat</strong>, relevez la largeur sous les aisselles et la longueur du dos. Pour <strong>comparer un t-shirt oversize</strong>, ajoutez la largeur des épaules. Vérifiez si la fiche exprime une largeur à plat ou un tour complet.</p>
+          <h4>Adapter la méthode à chaque pièce</h4>
+          <p>Un <strong>guide de pointure pour sneakers</strong> doit correspondre au modèle concerné. Pour <strong>vérifier la longueur d'un pantalon</strong>, distinguez entrejambe et longueur totale. Enfin, pour <strong>choisir un ensemble à sa taille</strong>, contrôlez séparément le haut et le bas.</p>
+        </article>
+
+        <article class="article">
+          <span class="eyebrow">Dossier 02 · Le regard</span>
+          <h3>Photos QC OOTDBuy : regarder au-delà du logo</h3>
+          <p>Pour <strong>lire des photos QC OOTDBuy</strong>, cherchez ce qui est réellement observable. Une photo nette peut montrer un défaut visible ; elle ne permet pas de conclure sur tout ce que vous ne voyez pas.</p>
+          <h4>Des détails à examiner</h4>
+          <p>Pour <strong>examiner les coutures d'un vêtement</strong>, regardez leur régularité et les jonctions. Pour <strong>comparer les finitions de sneakers</strong>, utilisez des angles similaires. Un éclairage différent complique la comparaison des couleurs.</p>
+          <h4>Des limites à garder en tête</h4>
+          <p><strong>Vérifier la symétrie d'une paire</strong> demande une vue des deux chaussures. <strong>Contrôler la référence d'un article</strong> suppose une correspondance avec la variante choisie. Et <strong>distinguer photo produit et photo QC</strong> évite de prendre une image de présentation pour celle de votre exemplaire.</p>
+        </article>
+
+        <article class="article">
+          <span class="eyebrow">Dossier 03 · Les associations</span>
+          <h3>Sélection de vêtements OOTDBuy : construire une tenue</h3>
+          <p>Pour <strong>composer une tenue streetwear sobre</strong>, choisissez une pièce centrale, puis cherchez des éléments qui la complètent. La cohérence des volumes compte autant que l'accord des couleurs.</p>
+          <h4>Des proportions avant les marques</h4>
+          <p><strong>Associer sneakers et pantalon droit</strong> demande de regarder où tombe l'ourlet. Pour <strong>choisir une veste pour la mi-saison</strong>, prévoyez l'épaisseur portée dessous. Pour <strong>comparer les matières d'un sweat</strong>, lisez la composition annoncée : l'image seule ne révèle pas le toucher.</p>
+          <h4>Finir sans surcharger</h4>
+          <p>Pour <strong>choisir une casquette ajustable</strong>, vérifiez la fermeture et les dimensions indiquées. Pour <strong>harmoniser bijoux et accessoires</strong>, comparez leurs proportions et leur finition. Gardez un détail dominant plutôt que d'accumuler les motifs.</p>
+        </article>
+
+        <article class="article">
+          <span class="eyebrow">Dossier 04 · Le budget</span>
+          <h3>Guide OOTDBuy en français : préparer son budget</h3>
+          <p>Pour <strong>estimer le coût total d'une sélection</strong>, séparez le montant des articles des autres dépenses. Un chiffre dans une liste n'est pas nécessairement le total à payer.</p>
+          <h4>Comprendre ce qui s'ajoute</h4>
+          <p><strong>Comparer prix article et frais de livraison</strong> permet d'éviter une comparaison incomplète. Pour <strong>préparer une commande vers la France</strong>, vérifiez le devis actuel et les conditions applicables à votre destination avant de valider.</p>
+          <h4>Conserver des repères utiles</h4>
+          <p><strong>Comprendre le poids volumétrique d'un colis</strong> aide à lire certains devis, selon la méthode du transporteur. Pour <strong>vérifier les conditions de retour</strong>, recherchez les délais et les exclusions. Enfin, <strong>conserver les références avant achat</strong> facilite le suivi de la variante choisie.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="comparison-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Le pense-bête</span>
+          <h2 id="comparison-title">Une fiche se lit<br>en plusieurs couches.</h2>
+        </div>
+        <p>Si une information manque, gardez la question ouverte. Une supposition n'améliore pas la précision de votre choix.</p>
+      </div>
+      <div class="table-box" role="region" aria-label="Points à vérifier avant de choisir" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Élément</th>
+              <th scope="col">Ce qu'il aide à comprendre</th>
+              <th scope="col">Ce qu'il reste à vérifier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Photo de présentation</th>
+              <td>La silhouette et l'intention visuelle.</td>
+              <td>Les détails de l'exemplaire et la variante proposée.</td>
+            </tr>
+            <tr>
+              <th scope="row">Tableau de mesures</th>
+              <td>Les dimensions annoncées pour chaque taille.</td>
+              <td>Les unités, la méthode et les tolérances indiquées.</td>
+            </tr>
+            <tr>
+              <th scope="row">Photo QC</th>
+              <td>Certains détails de l'article photographié.</td>
+              <td>La correspondance avec la commande ; l'authenticité ne se déduit pas de la photo.</td>
+            </tr>
+            <tr>
+              <th scope="row">Montant affiché</th>
+              <td>Un point de départ pour comparer.</td>
+              <td>La devise, les options, le transport et les frais éventuels.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section faq-layout" aria-labelledby="faq-title">
+      <div>
+        <span class="eyebrow">Les réponses directes</span>
+        <h2 id="faq-title">Avant de<br>continuer.</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>Qu'est-ce qu'un OOTDBuy spreadsheet ?</summary>
+          <p>C'est une liste organisée de références et de liens utilisée pour repérer et comparer des articles. Son nom ne garantit ni un format Excel, ni un stock disponible, ni la qualité d'un vendeur.</p>
+        </details>
+        <details>
+          <summary>Cette page est-elle officielle ou affiliée à OOTDBuy ?</summary>
+          <p>Non. Il s'agit d'un guide indépendant. Les liens de navigation conduisent à Hipobuyfind et aux catégories indiquées, pas à un compte OOTDBuy. Aucune affiliation avec les marques illustrées n'est revendiquée.</p>
+        </details>
+        <details>
+          <summary>Comment choisir une taille sans essayer l'article ?</summary>
+          <p>Mesurez un vêtement qui vous va, comparez les dimensions avec la fiche et vérifiez les unités ainsi que la méthode de mesure. Pour les chaussures, comparez la longueur du pied avec le tableau du modèle concerné.</p>
+        </details>
+        <details>
+          <summary>Les photos QC prouvent-elles l'authenticité ?</summary>
+          <p>Non. Elles peuvent aider à observer l'aspect d'un article photographié, mais ne suffisent pas à établir son authenticité, sa composition exacte ou sa durabilité.</p>
+        </details>
+        <details>
+          <summary>Peut-on connaître le coût final depuis un spreadsheet ?</summary>
+          <p>Pas avec le seul montant affiché. Il faut aussi vérifier le transport, les frais éventuels, la conversion monétaire et les taxes applicables à la destination avant de payer.</p>
+        </details>
+        <details>
+          <summary>Les images présentent-elles des articles disponibles sur Hipobuyfind ?</summary>
+          <p>Non. Les images servent de références visuelles pour les conseils de style. Elles ne confirment ni disponibilité, ni provenance, ni correspondance avec les articles du site de destination.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div>
+        <span class="eyebrow">Votre prochain repère</span>
+        <h2 id="closing-title">Commencer par ce que vous portez vraiment.</h2>
+        <p>Choisissez une catégorie, relevez vos mesures et gardez vos critères à portée de main pendant la comparaison.</p>
+      </div>
+      <a class="button" href="https://www.hipobuyfind.com">Ouvrir Hipobuyfind <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p><strong>Le carnet de sélection · Français</strong></p>
+    <p>Guide indépendant consacré à la lecture de références de mode. Les noms de marques appartiennent à leurs titulaires respectifs. Aucun prix, avis client, avantage commercial ou stock n'est garanti ici. Les commandes, paiements et demandes de service se traitent auprès du site concerné.</p>
+    <p><a href="https://www.hipobuyfind.com">hipobuyfind.com ↗</a></p>
+  </footer>
+</body>
+</html>
